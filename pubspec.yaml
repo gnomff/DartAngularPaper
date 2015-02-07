@@ -1,0 +1,19 @@
+name: 'DartAngularPaper'
+version: 0.0.1
+description: >
+  A minimal web app for the developer that doesn’t want to be confused by too
+  much going on.
+#author: <your name> <email@example.com>
+#homepage: https://www.example.com
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  angular: any
+  web_components: ">=0.8.0 <=0.10.0"
+  exportable: ">=0.1.0 <0.2.0"
+  unittest: any
+transformers:
+- angular:
+    html_files:
+      - lib/component/recipe_book.html

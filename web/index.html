@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    
+    
+    <!--<script src="packages/web_components/platform.js"></script> -->
+    <script src="packages/web_components/dart_support.js"></script>
+    
+   <link rel="import"
+          href="bower_components/paper-progress/paper-progress.html">
+<!--     <link rel="import"
+          href="bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import"
+          href="bower_components/paper-slider/paper-slider.html">
+       -->   
+    <link rel="import"
+      href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import"
+        href="bower_components/paper-icon-button/paper-icon-button.html">
+      
+    
+    <link rel="import"
+      href="bower_components/core-icons/core-icons.html">  
+    <link rel="import"
+      href="bower_components/core-list/core-list.html">
+        
+  </head>
+ 
+  <body fullbleed>   
+  <!--
+    <p id="text"></p>
+    
+    <p>Text from Angular: <b>{{text}}</b></p>
+    
+    <div>
+      <paper-progress bind-max=max bind-value=curValue></paper-progress>
+    </div>
+    
+    <p>
+      <label>
+        Change the value please:
+        <input type="text" ng-model="curValue">
+      </label>
+    </p>
+    
+    <div>
+        <paper-checkbox on-change="curValue = curValue == 5 ? 2 : curValue == 2 ? 10 : 5"></paper-checkbox>
+    </div>
+    
+    <div>
+        <paper-slider min="0" bind-max="max" bind-value="curValue" pin="true"></paper-slider>
+    </div>
+    -->
+    <recipe-book></recipe-book>
+    
+    
+    <script type="application/dart" src="index.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
